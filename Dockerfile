@@ -20,3 +20,4 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz
 	&& tar -xzf "node-v$NODE_VERSION.tar.gz" -C /usr/node --strip-components=1 \
 
 CMD [ "node" ]
+
