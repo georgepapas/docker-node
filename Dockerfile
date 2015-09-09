@@ -15,7 +15,7 @@ ENV NODE_VERSION 0.12.7
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz" \
 	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
-	&& tar -xzf "node-v$NODE_VERSION.tar.gz" -C /usr/node --strip-components=1 \	
+	&& tar -xzf "node-v$NODE_VERSION.tar.gz" -C /usr/node --strip-components=1	
 #	&& gpg --verify SHASUMS256.txt.asc \
 #	&& grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c - \
 
